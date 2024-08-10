@@ -56,7 +56,15 @@ h1 {
     padding: 16px auto;
     margin-right: 16px;
     margin-left:16px;
+    transition: all 0.1s ease-in;
 }
+
+.box:active{
+    box-shadow: unset;
+    transform: translate(4px,4px);
+    animation: all 0.1s  ease-out;
+}
+
 
 .progression {
     display: flex;
@@ -101,3 +109,14 @@ h1 {
 h3 {
     font-size: 16px;
 }
+
+@keyframes click {
+    0% {
+      opacity: 1;
+      transform: scale(0.0);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.0);
+    }
+  }
