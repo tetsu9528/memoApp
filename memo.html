@@ -7,25 +7,37 @@
     <title>memoApp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
 </head>
 <header>
-    <a href="index.html"><h1>「ユーザー名」のメモ</h1></a>
-    <div class="icon">
-        <img src="search.svg" id="search">
-        <img src="memo.svg" id="create">
-    </div>
+    <a href="index.html" id="title">
+        <h1>マンガのタイトル</h1>
+    </a>
+
 </header>
 
 <body>
     <div class="hero">
         <img src="comic-1.jpg" id="thumbnail">
+        <div class="status">
+           <div class="status-left">
+            <p>著者：</p>
+            <p>面白さ：</p>
+            <p>読了日：</p>
+           </div>
+
+           <div class="status-right">
+            <p>鳥山明</p>
+            <p>☆☆☆☆☆</p>
+            <p>未読了</p>
+           </div>
     </div>
     <div class="container" id="container">
-      
+
     </div>
-    <script src="main.js"></script>
+
 </body>
 
 </html>
