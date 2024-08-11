@@ -1,14 +1,19 @@
 @charset "utf-8";
 
+/*全体のデザイン*/
+
 * {
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
 
+
+/* ヘッダー */
 header {
     background-color: #eee;
     display: flex;
@@ -31,6 +36,8 @@ h1 {
     padding: 16px;
 }
 
+
+
 /*list*/
 .counter {
     display: flex;
@@ -47,10 +54,14 @@ h1 {
     overflow: hidden;
 }
 
-/*container*/
+/*メモ*/
 .container {
     width: fit-content;
     margin: 16px auto;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 .box {
@@ -62,16 +73,24 @@ h1 {
     transform: scale(0.8);
     transition: all 0.1s ease-in;
 }
-.box:hover{
+
+.box:hover {
     cursor: pointer;
 }
-.box:active{
+
+.box:active {
     box-shadow: unset;
-    transform: translate(4px,4px);
-    animation: all 0.1s  ease-out;
+    transform: translate(4px, 4px);
+    animation: all 0.1s ease-out;
 }
 
+.box-left img {
+    width: 100px;
+    height: 144px;
+    margin: 16px;
+}
 
+/*進行度*/
 .progression {
     display: flex;
     padding: 8px;
@@ -85,13 +104,7 @@ h1 {
     text-align: center;
 }
 
-.stars {
-    display: flex;
-    margin: 8px auto;
-    vertical-align: baseline;
-    font-size: 32px;
-}
-
+/* 面白さ */
 .fun {
     display: flex;
     padding: 8px;
@@ -101,21 +114,16 @@ h1 {
     margin: 16px auto;
 }
 
+.stars {
+    display: flex;
+    margin: 8px auto;
+    vertical-align: baseline;
+    font-size: 32px;
+}
+
+/* 読了ステータス */
 .finish {
     display: flex;
     padding: 16px;
 
 }
-
-.box-left img {
-    width: 100px;
-    height: 144px;
-    margin: 16px;
-}
-
-h3 {
-    font-size: 16px;
-}
-
-
-  
