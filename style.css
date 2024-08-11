@@ -192,7 +192,10 @@ text-align: center;
 #review h2{
     margin-left: 16px;
 }
-#createListButton{
+#createListButton,
+#createChapterButton,
+#createBoxButton
+{
     display: block;
 	text-align: center;
 	text-decoration: none;
@@ -205,28 +208,14 @@ text-align: center;
 	border-radius: 100vh;
 	transition: 0.5s;
 }
-#createListButton:hover{
+#createListButton:hover,
+#createChapterButton:hover,
+#createBoxButton:hover
+{
 	color: #fff;
 	background: #27acd9;
 }
 
-#createChapterButton{
-    display: block;
-	text-align: center;
-	text-decoration: none;
-	width: 120px;
-	margin: auto;
-	padding: 1rem 4rem;
-	font-weight: bold;
-	border: 2px solid #27acd9;
-	color: #27acd9;
-	border-radius: 100vh;
-	transition: 0.5s;
-}
-#createChapterButton:hover{
-	color: #fff;
-	background: #27acd9;
-}
 
 .interesting{
     margin:16px;
