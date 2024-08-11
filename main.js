@@ -29,7 +29,7 @@
     box.appendChild(light);
 
     // 最後に全体をDOMに追加する
-    document.getElementById("container").append(box,a);
+    document.getElementById("container").append(a);
   };
 
   const createTitle = (light) => {
