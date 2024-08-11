@@ -90,5 +90,4 @@
   document.getElementById("create").addEventListener("click",()=>{
     createBox();
   })
-
 }
