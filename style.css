@@ -29,6 +29,7 @@ header {
 .icon img {
     width: 24px;
     padding: 16px;
+    cursor: pointer;
 }
 
 h1 {
