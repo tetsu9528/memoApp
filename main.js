@@ -87,7 +87,7 @@
   createBoxLight(box,a);
   }
 
-  document.getElementById("create").addEventListener("click",()=>{
+  document.getElementById("createBoxButton").addEventListener("click",()=>{
     createBox();
   })
   
