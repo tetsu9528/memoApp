@@ -169,6 +169,7 @@ text-align: center;
     flex-wrap: wrap;
     margin:16px;
     transform: scale(0.8);
+    transition: all 0.1s ease-in;
 }
 .chapter p{
     font-size: 24px;
@@ -178,4 +179,37 @@ text-align: center;
     height:50%;
     margin:16px;
     
+}
+.chapter:active{
+    box-shadow: unset;
+    animation: all 0.1s ease-out;
+}
+#review{
+    transform: scale(0.9);
+}
+#review h3{
+    padding-left: 16px;
+}
+#review h2{
+    margin-left: 16px;
+}
+#createListButton{
+    display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+#createListButton:hover{
+	color: #fff;
+	background: #27acd9;
+}
+.interesting{
+    margin:16px;
 }
