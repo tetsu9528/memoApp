@@ -131,3 +131,9 @@ h3 {
 button{
     all:unset;
 }
+
+/* memo.html */
+#thumbnail{
+    width:100px;
+    height:144px;
+}
