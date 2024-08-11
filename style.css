@@ -133,7 +133,22 @@ button{
 }
 
 /* memo.html */
-#thumbnail{
-    width:100px;
-    height:144px;
+#title{
+    margin:0 auto;
+}
+.hero{
+text-align: center;
+}
+.hero #thumbnail{
+   margin:16px;
+    width:40%;
+    height:40%;
+}
+
+.status{
+    text-align: left;
+    margin:32px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 32px;
 }
