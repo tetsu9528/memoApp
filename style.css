@@ -162,7 +162,6 @@ text-align: center;
     flex-wrap: wrap;
 }
 .chapter{
-    width:fit-content;
     height:100%;
     padding-top:16px;
     box-shadow: 1px 1px 1px 1px #cecaca;
@@ -210,6 +209,25 @@ text-align: center;
 	color: #fff;
 	background: #27acd9;
 }
+
+#createChapterButton{
+    display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+#createChapterButton:hover{
+	color: #fff;
+	background: #27acd9;
+}
+
 .interesting{
     margin:16px;
 }
