@@ -80,7 +80,6 @@ h3 {
 
 .box:active {
     box-shadow: unset;
-    transform: translate(4px, 4px);
     animation: all 0.1s ease-out;
 }
 
@@ -126,4 +125,8 @@ h3 {
     display: flex;
     padding: 16px;
 
+}
+/* 生成ボタン */
+button{
+    all:unset;
 }

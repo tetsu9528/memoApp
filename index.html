@@ -7,14 +7,17 @@
     <title>memoApp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
 </head>
 <header>
-   <a href="index.html"><h1>「ユーザー名」のメモ</h1></a> 
+    <a href="index.html">
+        <h1>「ユーザー名」のメモ</h1>
+    </a>
     <div class="icon">
-        <img src="search.svg">
-        <img src="list.svg">
+        <img src="search.svg" id="search">
+        <img src="memo.svg" id="create">
     </div>
 </header>
 
@@ -26,44 +29,44 @@
         <p>アニメ</p>
         <p>ゲーム</p>
     </div>
-    
+
     <div class="container" id="container">
         <a href="memo.html">
-        <div class="box"click>
-            <div class="box-left">
-                <img src="comic-1.jpg">
+            <div class="box">
+                <div class="box-left">
+                    <img src="comic-1.jpg">
+                </div>
+                <div class="box-right">
+                    <h2>マンガのタイトル</h2>
+                    <div class="progression">
+                        <h3>進行度：</h3>
+                        <div class="progress">
+                            <p>2/4</p>
+                            <progress id="file" max="100" value="50">50%</progress>
+                        </div>
+                    </div>
+                    <div class="fun">
+                        <h3>面白さ：</h3>
+
+                        <div class="stars">
+                            <p>☆</p>
+                            <p>☆</p>
+                            <p>☆</p>
+                            <p>☆</p>
+                            <p>☆</p>
+                        </div>
+
+                    </div>
+                    <div class="finish">
+                        <h3>読了日：</h3>
+                        <div class="detail">
+                            <p>未読了</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="box-right">
-                <h2>マンガのタイトル</h2>
-                <div class="progression">
-                    <h3>進行度：</h3>
-                    <div class="progress">
-                        <p>2/4</p>
-                        <progress id="file" max="100" value="50">50%</progress>
-                    </div>
-                </div>
-                <div class="fun">
-                    <h3>面白さ：</h3>
-
-                    <div class="stars">
-                        <p>☆</p>
-                        <p>☆</p>
-                        <p>☆</p>
-                        <p>☆</p>
-                        <p>☆</p>
-                    </div>
-
-                </div>
-                <div class="finish">
-                    <h3>読了日：</h3>
-                    <div class="detail">
-                        <p>未読了</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </a>
+        </a>
     </div>
     <script src="main.js"></script>
 </body>
