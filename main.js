@@ -6,12 +6,8 @@
     if (className) element.classList.add(className);
     return element;
   };
-  const container = document.getElementById("container");
 
-  const box = document.createElement("div");
-  box.classList.add("box");
-
-  const createBoxLeft = () => {
+  const createBoxLeft = (box) => {
     const left = document.createElement("div");
     left.classList.add("box-left");
 
@@ -21,21 +17,19 @@
     left.appendChild(img);
     box.appendChild(left);
   };
+  
 
-  const createBoxLight = () => {
+  const createBoxLight = (box,a) => {
     const light = document.createElement("div");
     light.classList.add("box-light");
     createTitle(light);
     createProgression(light);
     createInteresting(light);
     createFinishReading(light);
-
-    // Append elements to their respective parents
-
     box.appendChild(light);
 
-    // 最後に全体をDOMに追加する例
-    document.getElementById("container").append(box);
+    // 最後に全体をDOMに追加する
+    document.getElementById("container").append(box,a);
   };
 
   const createTitle = (light) => {
@@ -81,6 +75,20 @@
     detail.appendChild(unFinish);
     light.appendChild(finish);
   };
-  createBoxLeft();
-  createBoxLight();
+
+  const createBox=()=>{
+    const a=document.createElement("a");
+  a.href="memo.html";
+  const box = document.createElement("div");
+  box.classList.add("box");
+  a.appendChild(box);
+  
+    createBoxLeft(box);
+  createBoxLight(box,a);
+  }
+
+  document.getElementById("create").addEventListener("click",()=>{
+    createBox();
+  })
+
 }
