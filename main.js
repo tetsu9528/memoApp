@@ -7,7 +7,7 @@
     return element;
   };
 
-  const createBoxLeft = (box) => {
+  const createBoxLeft = (a) => {
     const left = document.createElement("div");
     left.classList.add("box-left");
 
@@ -15,21 +15,20 @@
     img.src = "comic-1.jpg";
 
     left.appendChild(img);
-    box.appendChild(left);
+    a.appendChild(left);
   };
   
 
-  const createBoxLight = (box,a) => {
+  const createBoxLight = (a) => {
     const light = document.createElement("div");
     light.classList.add("box-light");
     createTitle(light);
     createProgression(light);
     createInteresting(light);
     createFinishReading(light);
-    box.appendChild(light);
+    a.appendChild(light);
 
-    // 最後に全体をDOMに追加する
-    document.getElementById("container").append(a);
+   
   };
 
   const createTitle = (light) => {
@@ -79,12 +78,15 @@
   const createBox=()=>{
     const a=document.createElement("a");
   a.href="memo.html";
+  a.id="memoLink";
   const box = document.createElement("div");
   box.classList.add("box");
-  a.appendChild(box);
+  box.appendChild(a);
   
-    createBoxLeft(box);
-  createBoxLight(box,a);
+    createBoxLeft(a);
+  createBoxLight(a);
+   // 最後に全体をDOMに追加する
+   document.getElementById("container").append(box);
   }
 
   document.getElementById("createBoxButton").addEventListener("click",()=>{
