@@ -89,6 +89,9 @@ h3 {
     height: 144px;
     margin: 16px;
 }
+#memoLink{
+    display: flex;
+}
 
 /*進行度*/
 .progression {
@@ -147,11 +150,12 @@ text-align: center;
 
 .status{
     text-align: left;
-    margin:16px;
-    padding:16px;
+    margin:32px;
+    padding:32px;
     display: flex;
     justify-content: space-between;
     line-height: 32px;
+    background-color: #eee;
 }
 #memoContainer{
     width: 100%;
@@ -162,14 +166,19 @@ text-align: center;
     flex-wrap: wrap;
 }
 .chapter{
-    height:100%;
-    padding-top:16px;
+ 
     box-shadow: 1px 1px 1px 1px #cecaca;
     flex-wrap: wrap;
     margin:16px;
     transform: scale(0.8);
     transition: all 0.1s ease-in;
+    text-align: center;
 }
+#chapterLink{
+display: block;
+   
+}
+
 .chapter p{
     font-size: 24px;
 }
