@@ -89,7 +89,10 @@
    document.getElementById("container").append(box);
   }
 
+
+  
   document.getElementById("createBoxButton").addEventListener("click",()=>{
+    
     createBox();
   })
   
