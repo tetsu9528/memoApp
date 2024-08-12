@@ -217,9 +217,9 @@ display: block;
 	border-radius: 100vh;
 	transition: 0.5s;
 }
-#createListButton:hover,
-#createChapterButton:hover,
-#createBoxButton:hover
+#createListButton:active,
+#createChapterButton:active,
+#createBoxButton:active
 {
 	color: #fff;
 	background: #27acd9;
