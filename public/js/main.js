@@ -12,7 +12,7 @@
     left.classList.add("box-left");
 
     const img = document.createElement("img");
-    img.src = "../img/comic-1.jpg";
+    img.src = "./img/comic-1.jpg";
 
     left.appendChild(img);
     a.appendChild(left);
@@ -77,7 +77,7 @@
 
   const createBox=()=>{
     const a=document.createElement("a");
-  a.href="memo.html";
+  a.href="./html/memo.html";
   a.id="memoLink";
   const box = document.createElement("div");
   box.classList.add("box");
@@ -92,8 +92,10 @@
 
   
   document.getElementById("createBoxButton").addEventListener("click",()=>{
-    
+   
     createBox();
   })
+
   
+
 }
