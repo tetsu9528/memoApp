@@ -59,6 +59,7 @@ h1 {
 .container {
     width: fit-content;
     margin: 16px auto;
+
 }
 
 h3 {
@@ -89,7 +90,8 @@ h3 {
     height: 144px;
     margin: 16px;
 }
-#memoLink{
+
+#memoLink {
     display: flex;
 }
 
@@ -130,34 +132,38 @@ h3 {
     padding: 16px;
 
 }
+
 /* 生成ボタン */
-button{
-    all:unset;
+button {
+    all: unset;
 }
 
 /* memo.html */
-#title{
-    margin:0 auto;
-}
-.hero{
-text-align: center;
-}
-.hero #thumbnail{
-   margin:16px;
-    width:40%;
-    height:40%;
+#title {
+    margin: 0 auto;
 }
 
-.status{
+.hero {
+    text-align: center;
+}
+
+.hero #thumbnail {
+    margin: 16px;
+    width: 40%;
+    height: 40%;
+}
+
+.status {
     text-align: left;
-    margin:32px;
-    padding:32px;
+    margin: 32px;
+    padding: 32px;
     display: flex;
     justify-content: space-between;
     line-height: 32px;
     background-color: #eee;
 }
-#memoContainer{
+
+#memoContainer {
     width: 100%;
     /* flexに変更 */
     display: flex;
@@ -165,67 +171,97 @@ text-align: center;
     /* 指定長さで折り返すように変更 */
     flex-wrap: wrap;
 }
-.chapter{
- 
+
+.chapter {
+
     box-shadow: 1px 1px 1px 1px #cecaca;
     flex-wrap: wrap;
-    margin:16px;
+    margin: 16px;
     transform: scale(0.8);
     transition: all 0.1s ease-in;
     text-align: center;
 }
-#chapterLink{
-display: block;
-   
+
+#chapterLink {
+    display: block;
+
 }
 
-.chapter p{
+.chapter p {
     font-size: 24px;
 }
-.chapter img{
-    width:50%;
-    height:50%;
-    margin:16px;
-    
+
+.chapter img {
+    width: 50%;
+    height: 50%;
+    margin: 16px;
+
 }
-.chapter:active{
+
+.chapter:active {
     box-shadow: unset;
     animation: all 0.1s ease-out;
 }
-#review{
+
+#review {
     transform: scale(0.9);
 }
-#review h3{
+
+#review h3 {
     padding-left: 16px;
 }
-#review h2{
+
+#review h2 {
     margin-left: 16px;
 }
+
 #createListButton,
 #createChapterButton,
-#createBoxButton
-{
+#createBoxButton {
     display: block;
-	text-align: center;
-	text-decoration: none;
-	width: 120px;
-	margin: auto;
-	padding: 1rem 4rem;
-	font-weight: bold;
-	border: 2px solid #27acd9;
-	color: #27acd9;
-	border-radius: 100vh;
-	transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    margin: auto;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    border: 2px solid #27acd9;
+    color: #27acd9;
+    border-radius: 100vh;
+    transition: 0.5s;
 }
+
 #createListButton:active,
 #createChapterButton:active,
-#createBoxButton:active
-{
-	color: #fff;
-	background: #27acd9;
+#createBoxButton:active {
+    color: #fff;
+    background: #27acd9;
 }
 
 
-.interesting{
-    margin:16px;
+.interesting {
+    margin: 16px;
 }
+
+@media screen and (min-width: 768px) {
+    .container{
+        display: flex;
+        width:100%;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+    .box{
+        width:50%;
+    }
+    }
+    @media screen and (min-width: 1200px) {
+        .container{
+            display: flex;
+            width:100%;
+            overflow: hidden;
+            flex-wrap: wrap;
+        }
+        .box{
+            width:33%;
+        }
+        }
