@@ -233,6 +233,7 @@ button {
     color: #27acd9;
     border-radius: 100vh;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 #createListButton:active,

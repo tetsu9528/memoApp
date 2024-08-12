@@ -12,7 +12,7 @@
     left.classList.add("box-left");
 
     const img = document.createElement("img");
-    img.src = "comic-1.jpg";
+    img.src = "../img/comic-1.jpg";
 
     left.appendChild(img);
     a.appendChild(left);
