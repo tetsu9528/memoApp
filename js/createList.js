@@ -22,7 +22,7 @@
     const createList=()=>{
         const ul=document.createElement("ul");
         const li=document.createElement("li");
-    
+        li.contentEditable="true";
         ul.appendChild(li);
         return ul;
     }
