@@ -210,9 +210,14 @@ button {
 #review {
     transform: scale(0.9);
 }
+#review li{
+    letter-spacing: 0.05em;
+    margin:16px;
+}
 
 #review h3 {
     padding-left: 16px;
+    font-size: 24px;
 }
 
 #review h2 {
@@ -245,7 +250,7 @@ button {
 
 
 .interesting {
-    margin: 16px;
+    margin: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -278,5 +283,20 @@ button {
         }
         #memoContainer{
             margin:0;
+        }
+        .interesting{
+            margin:32px;
+        }
+        #review{
+            display: block;
+            
+        }
+        #review li{
+            font-size: 24px;
+            
+        }
+        #review h3{
+            font-size: 32px;
+            margin:16px;
         }
         }
