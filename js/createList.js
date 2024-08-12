@@ -13,19 +13,46 @@
        const interesting=document.createElement("div");
        interesting.classList.add("interesting");
         interesting.appendChild(fun);
-        interesting.appendChild(createList());
+        interesting.appendChild(createPointList());
         interesting.appendChild(reason);
-        interesting.appendChild(createList());
+        interesting.appendChild(createReasonList());
        review.appendChild(interesting);
     }
 
-    const createList=()=>{
+    const createPointList=()=>{
         const ul=document.createElement("ul");
         const li=document.createElement("li");
         li.contentEditable="true";
+        li.id="interestingPoint"
         ul.appendChild(li);
         return ul;
     }
+
+    const createReasonList=()=>{
+        const ul=document.createElement("ul");
+        const li=document.createElement("li");
+        li.contentEditable="true";
+        li.id="interestingReason"
+        ul.appendChild(li);
+        return ul;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const interestingPoint = document.getElementById("interestingPoint");
+        const interestingReason = document.getElementById("interestingReason");
+    
+        // ページが読み込まれたときにlocalStorageからメモを取得する
+        interestingPoint.value = localStorage.getItem("interestingPoint") || "";
+        interestingReason.value = localStorage.getItem("interestingReason") || "";
+    
+        // メモの内容が変更されたらlocalStorageに保存する
+        interestingPoint.addEventListener("input", function() {
+            localStorage.setItem("interestingPoint", interestingPoint.value);
+        });
+        interestingReason.addEventListener("input", function() {
+            localStorage.setItem("interestingReason", interestingReason.value);
+        });
+    });
    
     document.getElementById("createListButton").addEventListener("click",()=>{
         createInterestingList();
