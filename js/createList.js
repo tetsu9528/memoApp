@@ -43,6 +43,16 @@
     document.getElementById("factor").appendChild(list);
   };
 
+  const createList02 = () => {
+    const list = createPointList();
+    document.getElementById("factor-2").appendChild(list);
+  };
+
+  const createList03 = () => {
+    const list = createPointList();
+    document.getElementById("factor-3").appendChild(list);
+  };
+
   document
     .getElementById("createInterestingListButton")
     .addEventListener("click", () => {
@@ -53,6 +63,14 @@
   document.getElementById("createListButton").addEventListener("click", () => {
     createList();
   });
+
+  document.getElementById("createListButton02").addEventListener("click", () => {
+    createList02();
+  });
+  document.getElementById("createListButton03").addEventListener("click", () => {
+    createList03();
+  });
+
 
 
 
