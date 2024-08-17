@@ -27,6 +27,10 @@ header {
     margin: 0 auto;
 }
 
+header a{
+    
+}
+
 .icon img {
     width: 24px;
     padding: 16px;
@@ -58,7 +62,8 @@ h1 {
 /*メモ*/
 .container {
     width: fit-content;
-   
+   display: block;
+   margin:16px auto;
 
 }
 
@@ -242,6 +247,8 @@ button {
 
 #createInterestingListButton,
 #createListButton,
+#createListButton02,
+#createListButton03,
 #createChapterButton,
 #createBoxButton {
     display: block;
@@ -259,6 +266,8 @@ button {
 }
 #createInterestingListButton:active,
 #createListButton:active,
+#createListButton02:active,
+#createListButton03:active,
 #createChapterButton:active,
 #createBoxButton:active {
     color: #fff;
