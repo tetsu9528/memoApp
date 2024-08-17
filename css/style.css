@@ -1,12 +1,13 @@
 @charset "utf-8";
 
+
 /*全体のデザイン*/
 
 * {
     margin: 0;
     font-family: "Noto Sans JP", sans-serif;
     background-color: #202124;
-    color:#f9f9f9;
+    color: #f9f9f9;
 }
 
 a {
@@ -16,6 +17,7 @@ a {
 
 
 /* ヘッダー */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -27,15 +29,11 @@ header {
     margin: 0 auto;
 }
 
-header a{
-    
-}
-
 .icon img {
     width: 24px;
     padding: 16px;
     cursor: pointer;
-    fill:#f9f9f9;
+    fill: #f9f9f9;
 }
 
 h1 {
@@ -44,8 +42,8 @@ h1 {
 }
 
 
-
 /*list*/
+
 .counter {
     display: flex;
     width: 100%;
@@ -59,11 +57,13 @@ h1 {
     overflow: hidden;
 }
 
-/*メモ*/
+
+/*index.html*/
+
 .container {
     width: fit-content;
-   display: block;
-   margin:16px auto;
+    display: block;
+    margin: 16px auto;
 
 }
 
@@ -71,14 +71,17 @@ h3 {
     font-size: 16px;
 }
 
+
+/* メモの見出し */
+
 .box {
     display: flex;
     width: fit-content;
-    padding:10px;
+    padding: 10px;
     margin-top: 32px;
     transform: scale(0.8);
     transition: all 0.1s ease-in;
-    border:solid,4px,white;
+    border: solid, 4px, white;
     border-radius: 32px;
 }
 
@@ -90,27 +93,31 @@ h3 {
     box-shadow: unset;
     animation: all 0.1s ease-out;
 }
-.box-left{
-    margin:auto 16px;
+
+.box-left {
+    margin: auto 16px;
 
 }
 
 .box-left img {
     width: 100px;
     height: 144px;
-    
+
 }
 
-.box-right{
-    width:100%;
+.box-right {
+    width: 100%;
 }
 
 #memoLink {
     display: inline-flex;
-   
+
 }
 
+
+/* ステータス */
 /*進行度*/
+
 .progression {
     display: flex;
     padding: 8px;
@@ -123,18 +130,20 @@ h3 {
 .progress {
     text-align: center;
 }
+
 progress::-webkit-progress-bar {
     border-radius: 15px;
-    
- }
- 
- progress::-webkit-progress-value {
+
+}
+
+progress::-webkit-progress-value {
     border-radius: 15px;
     background-color: #66fc7c;
- }
+}
 
 
 /* 面白さ */
+
 .fun {
     display: flex;
     padding: 8px;
@@ -151,32 +160,42 @@ progress::-webkit-progress-bar {
     font-size: 32px;
 }
 
+
 /* 読了ステータス */
+
 .finish {
     display: flex;
     padding: 8px;
 
 }
 
+
 /* 生成ボタン */
+
 button {
     all: unset;
 }
 
+
 /* memo.html */
+
 #title {
     margin: 0 auto;
 }
 
 .hero {
     text-align: center;
+
 }
 
 .hero #thumbnail {
     margin: 16px;
-    width: 40%;
+    width: 50%;
     height: 40%;
 }
+
+
+/* 著者、面白さ、読了日 */
 
 .status {
     text-align: left;
@@ -185,34 +204,37 @@ button {
     display: flex;
     justify-content: space-between;
     line-height: 32px;
-    border:1px solid #fff;
-    
+    border: 1px solid #fff;
+
 }
 
+
+/* チャプター */
 
 .chapter {
     display: flex;
     width: fit-content;
-    padding:10px;
+    padding: 10px;
     margin-top: 32px;
     transform: scale(0.8);
     transition: all 0.1s ease-in;
-    border:solid,4px,white;
+    border: solid, 4px, white;
     border-radius: 32px;
-   
+
 }
-.chapterThumbnail{
+
+.chapterThumbnail {
     transform: scale(0.8);
 }
-.chapter a{
+
+.chapter a {
     display: block;
 }
 
-
 .chapter p {
     font-size: 24px;
-    width:fit-content;
-    margin:16px auto;
+    width: fit-content;
+    margin: 16px auto;
 }
 
 
@@ -220,20 +242,23 @@ button {
     display: block;
     width: 60%;
     height: 60%;
-    margin:16px auto;
-
+    margin: 16px auto;
 }
 
 .chapter:active {
     animation: all 0.1s ease-out;
 }
 
+
+/* chapter.html */
+
 #review {
     transform: scale(0.9);
 }
-#review li{
+
+#review li {
     letter-spacing: 0.05em;
-    margin:16px;
+    margin: 16px;
 }
 
 #review h3 {
@@ -264,6 +289,7 @@ button {
     transition: 0.5s;
     cursor: pointer;
 }
+
 #createInterestingListButton:active,
 #createListButton:active,
 #createListButton02:active,
@@ -280,70 +306,91 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-    .container{
+    .container {
         display: flex;
-        width:100%;
+        width: 100%;
         overflow: hidden;
         flex-wrap: wrap;
     }
-    .box{
-        width:50%;
-    }
-    }
-    @media(min-width: 1200px) {
 
-        .container{
-            display: flex;
-            width:100%;
-            overflow: hidden;
-            flex-wrap: wrap;
-        }
-        .box{
-            width:30%;
-        }
-        .box h3{
-            margin:0;
-        }
-        .box a{
-            width:100%;
-        }
-        .progress{
-           display: block;
-           margin:8px auto;
-        }
-        #memo{
-           display: flex;
-        }
-        .chapter{
-            width:30%;
-            transform: scale(0.6);
-        }
-        .status{
-            margin:128px;
-            padding:64px;
-            font-size: 32px;
-            line-height: 32px;
-           
-        }
+    .box {
+        width: 50%;
+    }
+}
 
-        #chapterLink{
-            width: 100%;
-        }
-        #memoContainer{
-            margin:0;
-        }
-        .interesting{
-            margin:32px;
-        }
-        #review{
-            display: block;
-            
-        }
-        #review li{
-            font-size: 24px;
-            
-        }
-        #review h3{
-            font-size: 32px;
-        }
-        }
+@media(min-width: 1200px) {
+
+
+    /* index.html */
+
+    .container {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 30%;
+    }
+
+    .box h3 {
+        margin: 0;
+    }
+
+    .box a {
+        width: 100%;
+    }
+
+    .progress {
+        display: block;
+        margin: 8px auto;
+    }
+
+
+    /* memo.html */
+
+    .hero #thumbnail {
+        width: 20%;
+    }
+
+    .chapter {
+        width: 30%;
+        transform: scale(0.6);
+    }
+
+    .status {
+        padding: 64px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    #chapterLink {
+        width: 100%;
+    }
+
+    #memoContainer {
+        margin: 0;
+    }
+
+
+    /* chapter.html */
+
+    .interesting {
+        margin: 32px;
+    }
+
+    #review {
+        display: block;
+
+    }
+
+    #review li {
+        font-size: 24px;
+
+    }
+
+    #review h3 {
+        font-size: 32px;
+    }
+}
