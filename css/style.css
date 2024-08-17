@@ -58,7 +58,7 @@ h1 {
 /*メモ*/
 .container {
     width: fit-content;
-    margin: 16px auto;
+   
 
 }
 
@@ -96,8 +96,13 @@ h3 {
     
 }
 
+.box-right{
+    width:100%;
+}
+
 #memoLink {
-    display: flex;
+    display: inline-flex;
+   
 }
 
 /*進行度*/
@@ -235,6 +240,7 @@ button {
     margin-left: 16px;
 }
 
+#createInterestingListButton,
 #createListButton,
 #createChapterButton,
 #createBoxButton {
@@ -251,7 +257,7 @@ button {
     transition: 0.5s;
     cursor: pointer;
 }
-
+#createInterestingListButton:active,
 #createListButton:active,
 #createChapterButton:active,
 #createBoxButton:active {
@@ -275,7 +281,8 @@ button {
         width:50%;
     }
     }
-    @media screen and (min-width: 1200px) {
+    @media(min-width: 1200px) {
+
         .container{
             display: flex;
             width:100%;
@@ -283,10 +290,17 @@ button {
             flex-wrap: wrap;
         }
         .box{
-            width:33%;
+            width:30%;
+        }
+        .box h3{
+            margin:0;
         }
         .box a{
             width:100%;
+        }
+        .progress{
+           display: block;
+           margin:8px auto;
         }
         #memo{
            display: flex;
@@ -294,6 +308,17 @@ button {
         .chapter{
             width:30%;
             transform: scale(0.6);
+        }
+        .status{
+            margin:128px;
+            padding:64px;
+            font-size: 32px;
+            line-height: 32px;
+           
+        }
+
+        #chapterLink{
+            width: 100%;
         }
         #memoContainer{
             margin:0;
@@ -311,6 +336,5 @@ button {
         }
         #review h3{
             font-size: 32px;
-            margin:16px;
         }
         }
