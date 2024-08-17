@@ -260,7 +260,7 @@ button {
 }
 
 
-.interesting {
+.list {
     margin: 32px;
 }
 
@@ -284,6 +284,9 @@ button {
         }
         .box{
             width:33%;
+        }
+        .box a{
+            width:100%;
         }
         #memo{
            display: flex;

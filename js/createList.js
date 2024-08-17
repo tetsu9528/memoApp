@@ -9,14 +9,14 @@
         reason.textContent="理由";
     
       
-       const review=document.getElementById("review");
-       const interesting=document.createElement("div");
-       interesting.classList.add("interesting");
-        interesting.appendChild(fun);
-        interesting.appendChild(createPointList());
-        interesting.appendChild(reason);
-        interesting.appendChild(createReasonList());
-       review.appendChild(interesting);
+       const interesting=document.getElementById("interesting");
+       const list=document.createElement("div");
+       list.classList.add("list");
+        list.appendChild(fun);
+        list.appendChild(createPointList());
+        list.appendChild(reason);
+        list.appendChild(createReasonList());
+       interesting.appendChild(list);
     }
 
     const createPointList=()=>{
@@ -32,28 +32,13 @@
         const ul=document.createElement("ul");
         const li=document.createElement("li");
         li.contentEditable="true";
-        li.id="interestingReason"
+        li.id="interestingReason";
         ul.appendChild(li);
-        return ul;
+       return ul;
+        
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        const interestingPoint = document.getElementById("interestingPoint");
-        const interestingReason = document.getElementById("interestingReason");
     
-        // ページが読み込まれたときにlocalStorageからメモを取得する
-        interestingPoint.value = localStorage.getItem("interestingPoint") || "";
-        interestingReason.value = localStorage.getItem("interestingReason") || "";
-    
-        // メモの内容が変更されたらlocalStorageに保存する
-        interestingPoint.addEventListener("input", function() {
-            localStorage.setItem("interestingPoint", interestingPoint.value);
-        });
-        interestingReason.addEventListener("input", function() {
-            localStorage.setItem("interestingReason", interestingReason.value);
-        });
-    });
-   
     document.getElementById("createListButton").addEventListener("click",()=>{
         createInterestingList();
     })
