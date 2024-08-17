@@ -19,14 +19,14 @@
   };
   
 
-  const createBoxLight = (a) => {
-    const light = document.createElement("div");
-    light.classList.add("box-light");
-    createTitle(light);
-    createProgression(light);
-    createInteresting(light);
-    createFinishReading(light);
-    a.appendChild(light);
+  const createBoxRight = (a) => {
+    const right = document.createElement("div");
+    right.classList.add("box-right");
+    createTitle(right);
+    createProgression(right);
+    createInteresting(right);
+    createFinishReading(right);
+    a.appendChild(right);
 
    
   };
@@ -84,7 +84,7 @@
   box.appendChild(a);
   
     createBoxLeft(a);
-  createBoxLight(a);
+  createBoxRight(a);
    // 最後に全体をDOMに追加する
    document.getElementById("container").append(box);
   }
