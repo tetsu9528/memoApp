@@ -271,11 +271,12 @@ button {
 }
 
 #createInterestingListButton,
-#createListButton,
+#createListButton01,
 #createListButton02,
 #createListButton03,
 #createChapterButton,
-#createBoxButton {
+#createBoxButton,
+#deleteListButton{
     display: block;
     text-align: center;
     text-decoration: none;
@@ -291,7 +292,7 @@ button {
 }
 
 #createInterestingListButton:active,
-#createListButton:active,
+#createListButton01:active,
 #createListButton02:active,
 #createListButton03:active,
 #createChapterButton:active,
@@ -303,6 +304,12 @@ button {
 
 .list {
     margin: 32px;
+}
+
+#deleteListButton{
+    border: 2px solid #e71515;
+    color: #e71515;
+    margin:64px auto;
 }
 
 @media screen and (min-width: 768px) {
