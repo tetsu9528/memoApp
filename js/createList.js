@@ -145,6 +145,7 @@
     if (confirm("本当に消去しますか？")) {
       localStorage.clear();
       alert("LocalStorageのすべてのデータが削除されました。");
+      location.reload();
     }
   });
 
