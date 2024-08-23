@@ -1,7 +1,7 @@
 # QuickReview
 レビュー作成を助けるアプリ「QuickReview」
 # Demo  
-![Demo](https://github.com/user-attachments/assets/9dd0de05-4b64-4016-a2a6-a446262b744b)
+![Demo](https://github.com/user-attachments/assets/dd565fd9-0607-45c2-9f8c-3b36219e60bf)
 # Features
 レビューに必要な要点をあらかじめ用意してあり、レビューを書くときに何を書けばよいか迷うことを防ぐことができるのがこのアプリの特徴です。
 # Requirement
