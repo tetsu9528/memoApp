@@ -188,7 +188,7 @@
 
 
   // リストが編集されたときに自動的に保存
-  
+
   document.addEventListener("input", saveListData01);
   document.addEventListener("input", saveListData02);
   document.addEventListener("input", saveListData03);
